@@ -1,0 +1,52 @@
+{
+  "dataset": "Iris",
+  "train": 90,
+  "validation": 30,
+  "test": 30,
+  "modelo_base": {
+    "variables": [
+      "sepal length (cm)",
+      "sepal width (cm)",
+      "petal length (cm)",
+      "petal width (cm)"
+    ],
+    "parametros": {
+      "n_clusters": 3,
+      "init": "k-means++",
+      "n_init": 20,
+      "max_iter": 300,
+      "tol": 0.0001,
+      "random_state": 42,
+      "algorithm": "lloyd"
+    },
+    "diagnostico": {
+      "bias": "Medio",
+      "bias_proxy": 0.1111,
+      "varianza": "Baja",
+      "brecha_maxima": 0.0444,
+      "ajuste": "Underfit leve"
+    }
+  },
+  "modelo_ajustado": {
+    "variables": [
+      "petal length (cm)",
+      "petal width (cm)"
+    ],
+    "parametros": {
+      "n_clusters": 3,
+      "init": "k-means++",
+      "n_init": 50,
+      "max_iter": 300,
+      "tol": 0.001,
+      "random_state": 42,
+      "algorithm": "lloyd"
+    },
+    "diagnostico": {
+      "bias": "Bajo",
+      "bias_proxy": 0.0333,
+      "varianza": "Baja",
+      "brecha_maxima": 0.0333,
+      "ajuste": "Fit"
+    }
+  }
+}
